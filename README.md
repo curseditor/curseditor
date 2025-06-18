@@ -8,7 +8,7 @@ A terminal-native text editor with zero dependencies. No fluff. No runtime. Just
 
 ### Requirements
 
-- CMake ≥ 3.16
+- CMake ≥ 3.20
 - A C++ compiler (GCC or Clang)
 - ncurses development headers
 
