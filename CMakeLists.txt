@@ -39,7 +39,6 @@ set(PROJECT_SOURCES
 # Third-party libraries
 # ----------------------------------------------------------------------
 find_package(Curses REQUIRED)        # ncurses for ImTui
-find_package(CURL   REQUIRED)        # libcurl ≥ 7.40, needs UDS support
 find_package(Threads REQUIRED)       # libcurl may link against it
 
 # ----------------------------------------------------------------------
@@ -61,5 +60,4 @@ target_link_libraries(curseditor
     PRIVATE
     ${CURSES_LIBRARIES}
     Threads::Threads
-    CURL::libcurl                    # imported target from find_package(CURL)
 )
